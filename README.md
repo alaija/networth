@@ -1,2 +1,0 @@
-# networth
-NetWorth tracker
