@@ -12,9 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Install swift
-        uses: fwal/setup-swift
+        uses: fwal/setup-swift@v1
         with:
-          swift-version: 5.5
+          swift-version: "5.5"
       - name: Install tooling
         run: |
           brew install swift-format
