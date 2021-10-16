@@ -25,4 +25,3 @@ jobs:
         uses: mxcl/xcodebuild@v1
         with:
           action: build
-          code-sign-identity: '-'
