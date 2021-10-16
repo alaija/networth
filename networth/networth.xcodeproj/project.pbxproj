@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F57FDD802711B43400B91467 /* networthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FDD7F2711B43400B91467 /* networthApp.swift */; };
+		F57FDD822711B43400B91467 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FDD812711B43400B91467 /* ContentView.swift */; };
+		F57FDD842711B43700B91467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57FDD832711B43700B91467 /* Assets.xcassets */; };
+		F57FDD872711B43700B91467 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57FDD862711B43700B91467 /* Preview Assets.xcassets */; };
+		F57FDD892711B43700B91467 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FDD882711B43700B91467 /* Persistence.swift */; };
+		F57FDD8C2711B43700B91467 /* networth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F57FDD8A2711B43700B91467 /* networth.xcdatamodeld */; };
+		F57FDD972711B43800B91467 /* networthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FDD962711B43800B91467 /* networthTests.swift */; };
+		F57FDDA22711B43800B91467 /* networthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FDDA12711B43800B91467 /* networthUITests.swift */; };
+		F5BF85B627136B47000B3495 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF85B527136B47000B3495 /* Account.swift */; };
+		F5BF85B827136F6E000B3495 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF85B727136F6E000B3495 /* Transaction.swift */; };
+		F5BF85BA27137275000B3495 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF85B927137275000B3495 /* Tag.swift */; };
+		F5BF85BC271372D1000B3495 /* Payee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF85BB271372D1000B3495 /* Payee.swift */; };
+		F5BF85BE27137321000B3495 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF85BD27137321000B3495 /* ExchangeRate.swift */; };
+		F5BF85C12713746B000B3495 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF85C02713746B000B3495 /* Category.swift */; };
+		F5BF85C327137546000B3495 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF85C227137546000B3495 /* Currency.swift */; };
+		F5BF85C52713773A000B3495 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF85C42713773A000B3495 /* CoreDataHelpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F57FDD932711B43800B91467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57FDD742711B43400B91467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F57FDD7B2711B43400B91467;
+			remoteInfo = networth;
+		};
+		F57FDD9E2711B43800B91467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57FDD742711B43400B91467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F57FDD7B2711B43400B91467;
+			remoteInfo = networth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F57FDD7C2711B43400B91467 /* networth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = networth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57FDD7F2711B43400B91467 /* networthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networthApp.swift; sourceTree = "<group>"; };
+		F57FDD812711B43400B91467 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F57FDD832711B43700B91467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F57FDD862711B43700B91467 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F57FDD882711B43700B91467 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F57FDD8B2711B43700B91467 /* networth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = networth.xcdatamodel; sourceTree = "<group>"; };
+		F57FDD8D2711B43700B91467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57FDD922711B43800B91467 /* networthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = networthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57FDD962711B43800B91467 /* networthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networthTests.swift; sourceTree = "<group>"; };
+		F57FDD982711B43800B91467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57FDD9D2711B43800B91467 /* networthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = networthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57FDDA12711B43800B91467 /* networthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networthUITests.swift; sourceTree = "<group>"; };
+		F57FDDA32711B43800B91467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5BF85B527136B47000B3495 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		F5BF85B727136F6E000B3495 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		F5BF85B927137275000B3495 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		F5BF85BB271372D1000B3495 /* Payee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payee.swift; sourceTree = "<group>"; };
+		F5BF85BD27137321000B3495 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		F5BF85C02713746B000B3495 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F5BF85C227137546000B3495 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		F5BF85C42713773A000B3495 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F57FDD792711B43400B91467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FDD8F2711B43800B91467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FDD9A2711B43800B91467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F57FDD732711B43400B91467 = {
+			isa = PBXGroup;
+			children = (
+				F57FDD7E2711B43400B91467 /* networth */,
+				F57FDD952711B43800B91467 /* networthTests */,
+				F57FDDA02711B43800B91467 /* networthUITests */,
+				F57FDD7D2711B43400B91467 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F57FDD7D2711B43400B91467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F57FDD7C2711B43400B91467 /* networth.app */,
+				F57FDD922711B43800B91467 /* networthTests.xctest */,
+				F57FDD9D2711B43800B91467 /* networthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F57FDD7E2711B43400B91467 /* networth */ = {
+			isa = PBXGroup;
+			children = (
+				F5BF85C627138432000B3495 /* Account */,
+				F5BF85AF27136149000B3495 /* Persistence */,
+				F57FDD7F2711B43400B91467 /* networthApp.swift */,
+				F57FDD812711B43400B91467 /* ContentView.swift */,
+				F57FDD832711B43700B91467 /* Assets.xcassets */,
+				F57FDD8D2711B43700B91467 /* Info.plist */,
+				F57FDD8A2711B43700B91467 /* networth.xcdatamodeld */,
+				F57FDD852711B43700B91467 /* Preview Content */,
+			);
+			path = networth;
+			sourceTree = "<group>";
+		};
+		F57FDD852711B43700B91467 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F57FDD862711B43700B91467 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F57FDD952711B43800B91467 /* networthTests */ = {
+			isa = PBXGroup;
+			children = (
+				F57FDD962711B43800B91467 /* networthTests.swift */,
+				F57FDD982711B43800B91467 /* Info.plist */,
+			);
+			path = networthTests;
+			sourceTree = "<group>";
+		};
+		F57FDDA02711B43800B91467 /* networthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F57FDDA12711B43800B91467 /* networthUITests.swift */,
+				F57FDDA32711B43800B91467 /* Info.plist */,
+			);
+			path = networthUITests;
+			sourceTree = "<group>";
+		};
+		F5BF85AF27136149000B3495 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				F57FDD882711B43700B91467 /* Persistence.swift */,
+				F5BF85BF271373ED000B3495 /* Extenstions */,
+				F5BF85C42713773A000B3495 /* CoreDataHelpers.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		F5BF85BF271373ED000B3495 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				F5BF85B527136B47000B3495 /* Account.swift */,
+				F5BF85C02713746B000B3495 /* Category.swift */,
+				F5BF85C227137546000B3495 /* Currency.swift */,
+				F5BF85BD27137321000B3495 /* ExchangeRate.swift */,
+				F5BF85BB271372D1000B3495 /* Payee.swift */,
+				F5BF85B927137275000B3495 /* Tag.swift */,
+				F5BF85B727136F6E000B3495 /* Transaction.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		F5BF85C627138432000B3495 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F57FDD7B2711B43400B91467 /* networth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57FDDA62711B43800B91467 /* Build configuration list for PBXNativeTarget "networth" */;
+			buildPhases = (
+				F57FDD782711B43400B91467 /* Sources */,
+				F57FDD792711B43400B91467 /* Frameworks */,
+				F57FDD7A2711B43400B91467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = networth;
+			productName = networth;
+			productReference = F57FDD7C2711B43400B91467 /* networth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F57FDD912711B43800B91467 /* networthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57FDDA92711B43800B91467 /* Build configuration list for PBXNativeTarget "networthTests" */;
+			buildPhases = (
+				F57FDD8E2711B43800B91467 /* Sources */,
+				F57FDD8F2711B43800B91467 /* Frameworks */,
+				F57FDD902711B43800B91467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57FDD942711B43800B91467 /* PBXTargetDependency */,
+			);
+			name = networthTests;
+			productName = networthTests;
+			productReference = F57FDD922711B43800B91467 /* networthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F57FDD9C2711B43800B91467 /* networthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57FDDAC2711B43800B91467 /* Build configuration list for PBXNativeTarget "networthUITests" */;
+			buildPhases = (
+				F57FDD992711B43800B91467 /* Sources */,
+				F57FDD9A2711B43800B91467 /* Frameworks */,
+				F57FDD9B2711B43800B91467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57FDD9F2711B43800B91467 /* PBXTargetDependency */,
+			);
+			name = networthUITests;
+			productName = networthUITests;
+			productReference = F57FDD9D2711B43800B91467 /* networthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F57FDD742711B43400B91467 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F57FDD7B2711B43400B91467 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					F57FDD912711B43800B91467 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = F57FDD7B2711B43400B91467;
+					};
+					F57FDD9C2711B43800B91467 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = F57FDD7B2711B43400B91467;
+					};
+				};
+			};
+			buildConfigurationList = F57FDD772711B43400B91467 /* Build configuration list for PBXProject "networth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F57FDD732711B43400B91467;
+			productRefGroup = F57FDD7D2711B43400B91467 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F57FDD7B2711B43400B91467 /* networth */,
+				F57FDD912711B43800B91467 /* networthTests */,
+				F57FDD9C2711B43800B91467 /* networthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F57FDD7A2711B43400B91467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57FDD872711B43700B91467 /* Preview Assets.xcassets in Resources */,
+				F57FDD842711B43700B91467 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FDD902711B43800B91467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FDD9B2711B43800B91467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F57FDD782711B43400B91467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5BF85BC271372D1000B3495 /* Payee.swift in Sources */,
+				F5BF85B627136B47000B3495 /* Account.swift in Sources */,
+				F5BF85BA27137275000B3495 /* Tag.swift in Sources */,
+				F5BF85C327137546000B3495 /* Currency.swift in Sources */,
+				F57FDD8C2711B43700B91467 /* networth.xcdatamodeld in Sources */,
+				F5BF85C12713746B000B3495 /* Category.swift in Sources */,
+				F5BF85C52713773A000B3495 /* CoreDataHelpers.swift in Sources */,
+				F5BF85B827136F6E000B3495 /* Transaction.swift in Sources */,
+				F57FDD892711B43700B91467 /* Persistence.swift in Sources */,
+				F57FDD822711B43400B91467 /* ContentView.swift in Sources */,
+				F5BF85BE27137321000B3495 /* ExchangeRate.swift in Sources */,
+				F57FDD802711B43400B91467 /* networthApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FDD8E2711B43800B91467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57FDD972711B43800B91467 /* networthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57FDD992711B43800B91467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57FDDA22711B43800B91467 /* networthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F57FDD942711B43800B91467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F57FDD7B2711B43400B91467 /* networth */;
+			targetProxy = F57FDD932711B43800B91467 /* PBXContainerItemProxy */;
+		};
+		F57FDD9F2711B43800B91467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F57FDD7B2711B43400B91467 /* networth */;
+			targetProxy = F57FDD9E2711B43800B91467 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F57FDDA42711B43800B91467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F57FDDA52711B43800B91467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F57FDDA72711B43800B91467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"networth/Preview Content\"";
+				DEVELOPMENT_TEAM = 3RCVSCX7MF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = networth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.alaija.networth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F57FDDA82711B43800B91467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"networth/Preview Content\"";
+				DEVELOPMENT_TEAM = 3RCVSCX7MF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = networth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.alaija.networth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F57FDDAA2711B43800B91467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RCVSCX7MF;
+				INFOPLIST_FILE = networthTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.alaija.networthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/networth.app/networth";
+			};
+			name = Debug;
+		};
+		F57FDDAB2711B43800B91467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RCVSCX7MF;
+				INFOPLIST_FILE = networthTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.alaija.networthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/networth.app/networth";
+			};
+			name = Release;
+		};
+		F57FDDAD2711B43800B91467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RCVSCX7MF;
+				INFOPLIST_FILE = networthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.alaija.networthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = networth;
+			};
+			name = Debug;
+		};
+		F57FDDAE2711B43800B91467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RCVSCX7MF;
+				INFOPLIST_FILE = networthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.alaija.networthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = networth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F57FDD772711B43400B91467 /* Build configuration list for PBXProject "networth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57FDDA42711B43800B91467 /* Debug */,
+				F57FDDA52711B43800B91467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57FDDA62711B43800B91467 /* Build configuration list for PBXNativeTarget "networth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57FDDA72711B43800B91467 /* Debug */,
+				F57FDDA82711B43800B91467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57FDDA92711B43800B91467 /* Build configuration list for PBXNativeTarget "networthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57FDDAA2711B43800B91467 /* Debug */,
+				F57FDDAB2711B43800B91467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57FDDAC2711B43800B91467 /* Build configuration list for PBXNativeTarget "networthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57FDDAD2711B43800B91467 /* Debug */,
+				F57FDDAE2711B43800B91467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F57FDD8A2711B43700B91467 /* networth.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F57FDD8B2711B43700B91467 /* networth.xcdatamodel */,
+			);
+			currentVersion = F57FDD8B2711B43700B91467 /* networth.xcdatamodel */;
+			path = networth.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F57FDD742711B43400B91467 /* Project object */;
+}

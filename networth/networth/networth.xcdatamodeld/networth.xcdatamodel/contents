@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName="Account" syncable="YES" codeGenerationType="class">
+        <attribute name="icon" optional="YES" attributeType="String"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name_" optional="YES" attributeType="String"/>
+        <relationship name="currency_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Currency" inverseName="accounts_" inverseEntity="Currency"/>
+        <relationship name="transactionsFrom_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="source_" inverseEntity="Transaction"/>
+        <relationship name="transactionsTo_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="target" inverseEntity="Transaction"/>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="name_" optional="YES" attributeType="String"/>
+        <relationship name="transactions_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="category" inverseEntity="Transaction"/>
+    </entity>
+    <entity name="Currency" representedClassName="Currency" syncable="YES" codeGenerationType="class">
+        <attribute name="code_" optional="YES" attributeType="String"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name_" optional="YES" attributeType="String"/>
+        <attribute name="sign" optional="YES" attributeType="String"/>
+        <relationship name="accounts_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Account" inverseName="currency_" inverseEntity="Account"/>
+        <relationship name="exchangeRatesFrom_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ExchangeRate" inverseName="source_" inverseEntity="ExchangeRate"/>
+        <relationship name="exchangeRatesTo_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ExchangeRate" inverseName="target_" inverseEntity="ExchangeRate"/>
+    </entity>
+    <entity name="ExchangeRate" representedClassName="ExchangeRate" syncable="YES" codeGenerationType="class">
+        <attribute name="timestamp_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="value_" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <relationship name="source_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Currency" inverseName="exchangeRatesFrom_" inverseEntity="Currency"/>
+        <relationship name="target_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Currency" inverseName="exchangeRatesTo_" inverseEntity="Currency"/>
+    </entity>
+    <entity name="Payee" representedClassName="Payee" syncable="YES" codeGenerationType="class">
+        <attribute name="name_" optional="YES" attributeType="String"/>
+        <relationship name="transactions_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="payee" inverseEntity="Transaction"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="name_" optional="YES" attributeType="String"/>
+        <relationship name="transactions_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="tag" inverseEntity="Transaction"/>
+    </entity>
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES" codeGenerationType="class">
+        <attribute name="amount_" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="cleared" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="descr" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="timestamp_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="transactions_" inverseEntity="Category"/>
+        <relationship name="payee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Payee" inverseName="transactions_" inverseEntity="Payee"/>
+        <relationship name="source_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="transactionsFrom_" inverseEntity="Account"/>
+        <relationship name="tag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tag" inverseName="transactions_" inverseEntity="Tag"/>
+        <relationship name="target" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="transactionsTo_" inverseEntity="Account"/>
+    </entity>
+    <elements>
+        <element name="Transaction" positionX="-637.8204956054688" positionY="-31.57467651367188" width="124.71728515625" height="193"/>
+        <element name="Account" positionX="-110.98388671875" positionY="160.1369018554688" width="128" height="133"/>
+        <element name="Currency" positionX="78.0198974609375" positionY="164.4307250976562" width="128" height="103"/>
+        <element name="Category" positionX="-112.4024658203125" positionY="-45.1474609375" width="128" height="73"/>
+        <element name="ExchangeRate" positionX="142.1614990234375" positionY="-129.230712890625" width="128" height="103"/>
+        <element name="Tag" positionX="-63" positionY="81" width="128" height="88"/>
+        <element name="Payee" positionX="-54" positionY="90" width="128" height="73"/>
+    </elements>
+</model>
