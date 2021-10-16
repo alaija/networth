@@ -14,7 +14,7 @@ extension Transaction {
     }
 
     var amount: Decimal {
-        get { (amount_ ?? 0) as Decimal}
+        get { (amount_ ?? 0) as Decimal }
         set { amount_ = newValue as NSDecimalNumber }
     }
 

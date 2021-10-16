@@ -1,5 +1,5 @@
-import SwiftUI
 import CoreData
+import SwiftUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -16,16 +16,22 @@ struct ContentView: View {
                             Image(systemName: "plus")
                             Text(account.name)
                             Spacer()
-                            Text(account.currency.sign ?? account.currency.code )
+                            Text(account.currency.sign ?? account.currency.code)
                         }
-                        .contextMenu(ContextMenu(menuItems: {
-                            Button{ deleteAccount(account) } label: {
-                                Label("Edit Account", systemImage: "pencil")
-                            }
-                            Button{ deleteAccount(account) } label: {
-                                Label("Delete Account", systemImage: "trash")
-                            }
-                        }))
+                        .contextMenu(
+                            ContextMenu(menuItems: {
+                                Button {
+                                    deleteAccount(account)
+                                } label: {
+                                    Label("Edit Account", systemImage: "pencil")
+                                }
+                                Button {
+                                    deleteAccount(account)
+                                } label: {
+                                    Label("Delete Account", systemImage: "trash")
+                                }
+                            })
+                        )
                     }
                     .onDelete(perform: deleteAccounts)
 
