@@ -22,6 +22,6 @@ jobs:
 #         run: |
 #           swift-format -r -m lint networth
       - name: build project
-      - uses: mxcl/xcodebuild@v1
+        uses: mxcl/xcodebuild@v1
         with:
           action: build
