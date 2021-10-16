@@ -11,16 +11,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      - name: Install swift
-        uses: fwal/setup-swift@v1
-        with:
-          swift-version: "5.5"
-      - name: Install tooling
-        run: |
-          brew install swift-format
-      - name: Check code formatting
-        run: |
-          swift-format -r -m lint networth
+#       - name: Install swift
+#         uses: fwal/setup-swift@v1
+#         with:
+#           swift-version: "5.5"
+#       - name: Install tooling
+#         run: |
+#           brew install swift-format
+#       - name: Check code formatting
+#         run: |
+#           swift-format -r -m lint networth
+      - name: build project
       - uses: mxcl/xcodebuild@v1
         with:
           action: build
