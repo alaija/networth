@@ -17,6 +17,6 @@ jobs:
       - name: Check code formatting
         run: |
           swift-format -r -m lint networth
-      - use: mxcl/xcodebuild@v1
+      - uses: mxcl/xcodebuild@v1
         with:
           action: build
