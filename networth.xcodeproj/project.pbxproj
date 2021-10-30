@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F57FDD802711B43400B91467 /* networthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FDD7F2711B43400B91467 /* networthApp.swift */; };
-		F57FDD822711B43400B91467 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FDD812711B43400B91467 /* ContentView.swift */; };
+		F57FDD822711B43400B91467 /* AccountsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FDD812711B43400B91467 /* AccountsListView.swift */; };
 		F57FDD842711B43700B91467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57FDD832711B43700B91467 /* Assets.xcassets */; };
 		F57FDD872711B43700B91467 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57FDD862711B43700B91467 /* Preview Assets.xcassets */; };
 		F57FDD892711B43700B91467 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FDD882711B43700B91467 /* Persistence.swift */; };
@@ -45,7 +45,7 @@
 /* Begin PBXFileReference section */
 		F57FDD7C2711B43400B91467 /* networth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = networth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57FDD7F2711B43400B91467 /* networthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networthApp.swift; sourceTree = "<group>"; };
-		F57FDD812711B43400B91467 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F57FDD812711B43400B91467 /* AccountsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListView.swift; sourceTree = "<group>"; };
 		F57FDD832711B43700B91467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F57FDD862711B43700B91467 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F57FDD882711B43700B91467 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -118,7 +118,6 @@
 				F5BF85C627138432000B3495 /* Account */,
 				F5BF85AF27136149000B3495 /* Persistence */,
 				F57FDD7F2711B43400B91467 /* networthApp.swift */,
-				F57FDD812711B43400B91467 /* ContentView.swift */,
 				F57FDD832711B43700B91467 /* Assets.xcassets */,
 				F57FDD8D2711B43700B91467 /* Info.plist */,
 				F57FDD8A2711B43700B91467 /* networth.xcdatamodeld */,
@@ -180,6 +179,7 @@
 		F5BF85C627138432000B3495 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				F57FDD812711B43400B91467 /* AccountsListView.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 				F5BF85C52713773A000B3495 /* CoreDataHelpers.swift in Sources */,
 				F5BF85B827136F6E000B3495 /* Transaction.swift in Sources */,
 				F57FDD892711B43700B91467 /* Persistence.swift in Sources */,
-				F57FDD822711B43400B91467 /* ContentView.swift in Sources */,
+				F57FDD822711B43400B91467 /* AccountsListView.swift in Sources */,
 				F5BF85BE27137321000B3495 /* ExchangeRate.swift in Sources */,
 				F57FDD802711B43400B91467 /* networthApp.swift in Sources */,
 			);
