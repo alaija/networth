@@ -14,13 +14,13 @@ extension ExchangeRate {
     }
 
     var value: Decimal {
-        get { (value_ ?? 0) as Decimal}
+        get { (value_ ?? 0) as Decimal }
         set { value_ = newValue as NSDecimalNumber }
     }
 
     var source: Currency {
         get { source_! }
-        set { source_ = newValue}
+        set { source_ = newValue }
     }
 
     var target: Currency {

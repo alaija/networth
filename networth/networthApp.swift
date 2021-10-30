@@ -6,7 +6,7 @@ struct networthApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AccountsListView()
                 .environment(
                     \.managedObjectContext,
                     persistenceController.container.viewContext
